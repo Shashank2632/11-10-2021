@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    int a[6],i,maxi;
+    float b[6],maxf;
+    printf("Enter Mr.Int wage:\n");
+    for(i=0;i<6;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("Enter Mr.Float wage:\n");
+    for(i=0;i<6;i++)
+    {
+        scanf("%f",&b[i]);
+    }
+    maxi=0;
+    maxf=0;
+    for(i=0;i<6;i++)
+    {
+        if(a[i]>maxi)
+        maxi=a[i];
+        if(b[i]>maxf)
+        maxf=b[i];
+    }
+    printf("Mr.Int will party when he gets Rs.%d\n", maxi);
+    printf("Mr.Float will party when he gets Rs.%0.2f\n", maxf);
+    return 0;
+}
