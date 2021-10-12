@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    int a[6],i,n;
+    float b[6];
+    char c[6]={'M','T','W','T','F','S'};
+  printf("Enter Mr. Int daily wages\n");
+    for(i=0;i<6;i++)
+  { 
+    scanf("%d",&a[i]);
+  }
+  printf("Mr.floats wages are:");
+  for(i=0;i<6;i++)
+  printf("%c-Rs %d,",c[i],a[i]);
+  printf("\nThe wages in reverse are: ");
+  for(n=5;n>=0;n--)
+  printf("%c-Rs %d,",c[n],a[n]);
+  printf("\nEnter Mr.float daily wages\n");
+ for(i=0;i<6;i++)
+  { 
+    scanf("%f",&b[i]);
+  }
+  printf("Mr.floats wages are:");
+  for(i=0;i<6;i++)
+  printf("%c-Rs %f",c[i],b[i]);
+  printf("\nThe wages in reverse are:");
+  for(n=5;n>=0;n--)
+  printf("%c-Rs %f,",c[n],b[n]);
+}
